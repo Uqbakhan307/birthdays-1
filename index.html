@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaj TV Recap</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 900px;
+        padding: 20px;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .news-item {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-item .title {
+        padding: 15px;
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .news-item .title a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .news-item .title a:hover {
+        color: #007bff;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Aaj TV Recap</h2>
+    <div class="news-grid">
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300x200" alt="News Image 1">
+            <div class="title">
+                <a href="#">What are causes of smog and its spread? - Aaj News</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300x200" alt="News Image 2">
+            <div class="title">
+                <a href="#">FBR obtains data on rich people from NADRA - Aaj News</a>
+            </div>
+        </div>
+        <div class="news-item">
+            <img src="https://via.placeholder.com/300x200" alt="News Image 3">
+            <div class="title">
+                <a href="#">Pakistani filmmaker Jawad Sharif's 'Moklani': a story of cultural heritage and local community</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
