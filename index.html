@@ -1,93 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aaj TV Recap</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .container {
-        max-width: 900px;
-        padding: 20px;
-        text-align: center;
-        background-color: #fff;
-    }
-
-    h2 {
-        text-transform: uppercase;
-        color: #333;
-        margin-bottom: 20px;
-    }
-
-    .news-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
-    .news-item {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        overflow: hidden;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .news-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    .news-item .title {
-        padding: 15px;
-        font-size: 16px;
-        color: #333;
-        font-weight: bold;
-    }
-
-    .news-item .title a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .news-item .title a:hover {
-        color: #007bff;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life & Style News</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="container">
-    <h2>Aaj TV Recap</h2>
-    <div class="news-grid">
-        <div class="news-item">
-            <img src="https://via.placeholder.com/300x200" alt="News Image 1">
-            <div class="title">
-                <a href="#">What are causes of smog and its spread? - Aaj News</a>
+    <div class="container">
+        <h1>Life & Style</h1>
+        <div class="grid">
+            <div class="item">
+                <img src="image1.jpg" alt="News 1">
+                <h2>Karnataka High Court grants interim bail to actor Darshan Thoogudeepa for surgery</h2>
+                <p>Darshan's report reveals that he had been experiencing numbness in both legs.</p>
             </div>
-        </div>
-        <div class="news-item">
-            <img src="https://via.placeholder.com/300x200" alt="News Image 2">
-            <div class="title">
-                <a href="#">FBR obtains data on rich people from NADRA - Aaj News</a>
+            <div class="item">
+                <img src="image2.jpg" alt="News 2">
+                <h2>Firdous Jamal's wife files for divorce after 35 years of marriage</h2>
+                <p>Hamza says his mother had endured numerous hardships in hopes of improvement.</p>
             </div>
-        </div>
-        <div class="news-item">
-            <img src="https://via.placeholder.com/300x200" alt="News Image 3">
-            <div class="title">
-                <a href="#">Pakistani filmmaker Jawad Sharif's 'Moklani': a story of cultural heritage and local community</a>
+            <div class="item">
+                <img src="image3.jpg" alt="News 3">
+                <h2>Mahira Khan faces backlash over ramp walk performance</h2>
+                <p>Mahira Khan is occupied with the filming of her upcoming Netflix project.</p>
+            </div>
+            <div class="item">
+                <img src="image4.jpg" alt="News 4">
+                <h2>CNN suspends conservative commentator for attack on journalist Mehdi Hasan</h2>
+                <p>American news channel apologises for anger comment by conservative panellist to Hasan.</p>
+            </div>
+            <div class="item">
+                <img src="image5.jpg" alt="News 5">
+                <h2>Arjun Kapoor confirms separation from Malaika Arora</h2>
+                <p>Speculation about their breakup had been circulating on social media for several days.</p>
+            </div>
+            <div class="item">
+                <img src="image6.jpg" alt="News 6">
+                <h2>Tom Cruise teams up with Alejandro Gonzalez Inarritu for new film</h2>
+                <p>Shooting set to begin in UK next month.</p>
+            </div>
+            <div class="item">
+                <img src="image7.jpg" alt="News 7">
+                <h2>Viral optical illusion dress resurfaces at Vermont Yard sale, sparking new buzz</h2>
+                <p>The dress was designed by British brand Roman Originals.</p>
             </div>
         </div>
     </div>
-</div>
-
 </body>
 </html>
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.item p {
+    font-size: 14px;
+    color: #555;
+}
+
